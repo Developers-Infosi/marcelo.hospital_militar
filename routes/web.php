@@ -19,7 +19,7 @@ use App\Http\Middleware\Admin;
         Route::middleware(['auth'])->group(function () {
 
         /* Manager Dashboard  */
-        route::get('/', ['as' => 'site.home', 'uses' => 'Admin\DashboardController@index']);
+        route::get('/', ['as' => 'home.home', 'uses' => 'Admin\DashboardController@index']);
 
     Route::middleware([Admin::class])->group(function () {
         /* User */
